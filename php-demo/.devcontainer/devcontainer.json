@@ -1,0 +1,30 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the README at:
+// https://github.com/microsoft/vscode-dev-containers/tree/v0.177.0/containers/ubuntu
+{
+	"name": "PHP 7.2",
+	"build": {
+		"dockerfile": "Dockerfile",
+	},
+
+	// Set *default* container specific settings.json values on container create.
+	"settings": { 
+		"terminal.integrated.shell.linux": "/bin/bash"
+	},
+
+	// Add the IDs of extensions you want installed when the container is created.
+	"extensions": [
+		"naumovs.color-highlight",
+		"streetsidesoftware.code-spell-checker",
+		"gurumukhi.selected-lines-count",
+		"dotjoshjohnson.xml",
+		"mohsen1.prettify-json",
+		"bmewburn.vscode-intelephense-client",
+		"marcostazi.vs-code-drupal"
+	],
+
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	"forwardPorts": [4000],
+
+	// Comment out connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
+	"remoteUser": "vscode"
+}
