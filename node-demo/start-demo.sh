@@ -3,7 +3,7 @@
 echo ""
 command -v composer &> /dev/null && composer --version || echo "Composer not found."
 echo ""
-command -v npm &> /dev/null && echo "NPM version: $(npm --version)" || echo "NPM not found."
+command -v node &> /dev/null && echo "Node version: $(node -v)" || echo "Node not found."
 echo ""
 command -v php &> /dev/null && php -v || echo "PHP not found."
 echo ""
